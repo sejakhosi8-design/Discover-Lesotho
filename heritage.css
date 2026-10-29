@@ -1,0 +1,25 @@
+/* CULTURE SECTION BELOW ROYAL CARDS */
+.culture-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.culture-card {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #38bdf8;
+}
+
+.culture-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.culture-card p {
+  color: #94a3b8;
+  line-height: 1.6;
+}

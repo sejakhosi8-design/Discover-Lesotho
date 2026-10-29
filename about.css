@@ -1,0 +1,69 @@
+/* DIFFERENT BACKGROUND FOR ABOUT PAGE HEADER */
+header.sub-header {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url("about-background.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CONTENT CONTAINER & PLACES GRID */
+.content-container {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 20px;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* CARDS STYLING */
+.card {
+  background: #1e293b; /* Dark card background to match your site */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #0b1120;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .img-wrapper img {
+  transform: scale(1.05);
+}
+
+.card-info {
+  padding: 1.5rem;
+}
+
+.card-info h3 {
+  font-size: 1.25rem;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.card-info p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
